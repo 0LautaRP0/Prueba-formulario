@@ -1,0 +1,81 @@
+{{> head }}
+
+
+
+{{> navbar }}
+
+
+
+  <div class="container alumnos-container border">
+      <div class="container my-3 border form-container-alumnos">
+        <h2>Alumnos</h2>
+        <form class="form-alumnos" action="#">
+          <p>ID: <span class="lbl-id"></span></p>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="txt-email"
+              class="form-control"
+              placeholder="Ingrese el email"
+              name="email"
+            />
+          </div>
+          <div class="form-group">
+            <label for="apellido">Apellido</label>
+            <input
+              type="text"
+              id="txt-apellido"
+              class="form-control"
+              placeholder="Ingrese el apellido"
+              name="apellido"
+            />
+          </div>
+          <div class="form-group">
+            <label for="nombre">Nombre</label>
+            <input
+              type="text"
+              id="txt-nombre"
+              class="form-control"
+              placeholder="Ingrese el nombre"
+              name="nombre"
+            />
+          </div>
+          <button type="button" class="btn-guardar-alumnos btn btn-primary">
+            Guardar
+          </button>
+          <button type="button" class="btn-actualizar-alumnos btn btn-primary">
+            Actualizar
+          </button>
+          <button type="button" class="btn-limpiar-alumnos btn btn-primary">
+            Limpiar
+          </button>
+        </form>
+        <div class="container tabla border my-2 py-2 lista-alumnos">
+          <table class="table">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">Email</th>
+                <th scope="col">Apellido</th>
+                <th scope="col">Nombre</th>
+              </tr>
+            </thead>
+            <tbody class="filas-alumnos">
+                          {{!-- {%alumnos%} --}}
+
+              <!-- <tr>
+              <th scope="row">1</th>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>@mdo</td>
+              </tr> -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+
+
+
+{{> footer }}

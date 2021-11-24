@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "email": "ejemplo@gmail.com",
+    "apellido": "Azul",
+    "nombre": "red"
+  },
+  {
+    "id": 2,
+    "email": "ejemplo@gmail.com",
+    "apellido": "Olavarría",
+    "nombre": "green"
+  },
+  {
+    "id": 3,
+    "email": "ejemplo@gmail.com",
+    "apellido": "Tandil",
+    "nombre": "blue"
+  },
+  {
+    "id": 4,
+    "email": "ejemplo@gmail.com",
+    "apellido": "Rauch",
+    "nombre": "cyan"
+  },
+  {
+    "id": 5,
+    "email": "ejemplo@gmail.com",
+    "apellido": "Las Flores",
+    "nombre": "magenta"
+  }
+]
