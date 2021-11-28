@@ -1,5 +1,5 @@
 const express = require('express');
-const controller = require('./../controladores/alumnosController');
+const controller = require('./../controllers/alumnosController');
 const routerAlumnos = express.Router();
 
 // routerAlumnos.route('/estadisticas').get(controller.estadisticas);
@@ -8,7 +8,7 @@ const routerAlumnos = express.Router();
 //   .get(controller.listadoFiltrado)
 //   .get(controller.mostrarAlumnos);
 routerAlumnos
-  .route('/')
+  .route('/alumno')
   .get(controller.mostrarAlumnos)
   .post(controller.crearAlumno);
 routerAlumnos

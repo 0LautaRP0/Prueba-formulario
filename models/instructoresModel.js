@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const validator = require('validator');
 
-const alumnoSchema = new mongoose.Schema(
+const instructorSchema = new mongoose.Schema(
   {
     apellido: {
       type: String,

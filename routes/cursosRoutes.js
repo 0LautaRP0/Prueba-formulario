@@ -1,5 +1,5 @@
 const express = require('express');
-const controller = require('./../controladores/cursosController');
+const controller = require('./../controllers/cursosController');
 const routerCursos = express.Router();
 
 // routerCursos.route('/estadisticas').get(controller.estadisticas);
@@ -8,9 +8,9 @@ const routerCursos = express.Router();
 //   .get(controller.listadoFiltrado)
 //   .get(controller.mostrarCursos);
 routerCursos
-  .route('/')
+  .route('/curso')
   .get(controller.mostrarCursos)
-  .post(controller.crearcurso);
+  .post(controller.crearCurso);
 routerCursos
   .route('/:id')
   .get(controller.mostrarCurso)

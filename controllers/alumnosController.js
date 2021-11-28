@@ -1,5 +1,5 @@
 const Alumno = require('../models/alumnosModel');
-const apiOpciones = require('../apiOpciones');
+const clasesAlumnos = require('./../clases/clasesAlumnos');
 const AppError = require('./../utils/appError');
 const catchAsync = require('./../utils/catchAsync');
 // const { isNumberObject } = require('util/types');
@@ -10,7 +10,7 @@ const catchAsync = require('./../utils/catchAsync');
 exports.mostrarAlumnos = catchAsync(async (req, res, next) => {
   let queryObj = { ...req.query };
   let query = Alumno.find();
-  new apiOpciones(query, queryObj).filtrar().ordenar().limit().paginar();
+  new clasesAlumnos(query, queryObj).filtrar().ordenar().limit().paginar();
 
   const alumnos = await query;
 

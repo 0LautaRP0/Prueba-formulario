@@ -1,12 +1,16 @@
 const express = require('express');
 // const morgan = require('morgan');
-const routerAlumnos = require('./rutas/rutasAlumnos');
+const routerAlumnos = require('./routes/alumnosRoutes');
+const routerCursos = require('./routes/cursosRoutes');
+const routerInstructores = require('./routes/instructoresRoutes');
 // const routerAuth = require('./rutas/auth');
 const app = express();
 
 app.use(express.json());
 // app.use(morgan('dev'))
 app.use('/api/v1/alumnos', routerAlumnos);
+app.use('/api/v1/cursos', routerCursos);
+app.use('/api/v1/instructores', routerInstructores);
 // app.use('/api/v1/auth', routerAuth);
 
 // manejador de rutasno encontradas

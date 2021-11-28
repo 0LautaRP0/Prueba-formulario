@@ -1,4 +1,4 @@
-class APIOpciones {
+class CLASESCursos {
   constructor(query, queryReq) {
     this.query = query;
     this.queryReq = queryReq;
@@ -20,7 +20,7 @@ class APIOpciones {
       const sortBy = this.queryReq.sort.split(',').join(' ');
       this.query = this.query.sort(sortBy);
     } else {
-      this.query = this.query.sort('apellido nombres');
+      this.query = this.query.sort('nombre');
     }
     return this;
   }
@@ -44,4 +44,4 @@ class APIOpciones {
   }
 }
 
-module.exports = APIOpciones;
+module.exports = CLASESCursos;

@@ -1,5 +1,5 @@
 const Curso = require('../models/cursosModel');
-const apiOpciones = require('../apiOpciones');
+const clasesCursos = require('./../clases/clasesCursos');
 const AppError = require('./../utils/appError');
 const catchAsync = require('./../utils/catchAsync');
 // const { isNumberObject } = require('util/types');
@@ -10,7 +10,7 @@ const catchAsync = require('./../utils/catchAsync');
 exports.mostrarCursos = catchAsync(async (req, res, next) => {
   let queryObj = { ...req.query };
   let query = Curso.find();
-  new apiOpciones(query, queryObj).filtrar().ordenar().limit().paginar();
+  new clasesCursos(query, queryObj).filtrar().ordenar().limit().paginar();
 
   const cursos = await query;
 
