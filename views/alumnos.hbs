@@ -6,7 +6,7 @@
 
 
 
-  <div class="container alumnos-container border">
+  <div c<div class="container alumnos-container border">
       <div class="container my-3 border form-container-alumnos">
         <h2>Alumnos</h2>
         <form class="form-alumnos" action="#">
@@ -22,7 +22,7 @@
             />
           </div>
           <div class="form-group">
-            <label for="apellido">Apellido</label>
+            <label for="apellido">Apellido:</label>
             <input
               type="text"
               id="txt-apellido"
@@ -32,13 +32,63 @@
             />
           </div>
           <div class="form-group">
-            <label for="nombre">Nombre</label>
+            <label for="nombre">Nombre:</label>
             <input
               type="text"
               id="txt-nombre"
               class="form-control"
               placeholder="Ingrese el nombre"
               name="nombre"
+            />
+          </div>
+          <div class="form-group">
+            <label for="documento">Tipo de documento:</label>
+            <input
+              type="text"
+              id="txt-documento-tipo"
+              class="form-control"
+              placeholder="Ingrese el tipo de documento"
+              name="tipo de documento"
+            />
+          </div>
+          <div class="form-group">
+            <label for="documento">Numero de Documento:</label>
+            <input
+              type="text"
+              id="txt-documento-numero"
+              class="form-control"
+              placeholder="Ingrese el numero de documento"
+              name="numero de documento"
+            />
+          </div>
+          <div class="form-group">
+            <label for="domicilio">Domicilio:</label>
+            <input
+              type="text"
+              id="txt-domicilio"
+              class="form-control"
+              placeholder="Ingrese el domicilio"
+              name="domicilio"
+            />
+          </div>
+          <div class="form-group">
+            <label for="telefono">Telefono:</label>
+            <input
+              type="text"
+              id="txt-telefono"
+              class="form-control"
+              placeholder="Ingrese el telefono"
+              name="telefono"
+            />
+          </div>
+          <div class="form-group">
+            <label for="fecNac">Fecha de nacimiento:</label>
+            <input
+              type="text"
+              id="txt-fec-nac"
+              class="form-control"
+              placeholder="Ingrese la fecha de nacimiento"
+              name="fecha de nacimiento"
             />
           </div>
           <button type="button" class="btn-guardar-alumnos btn btn-primary">
@@ -51,18 +101,20 @@
             Limpiar
           </button>
         </form>
-        <div class="container tabla border my-2 py-2 lista-alumnos">
+        <div class="container tabla my-2 py-2 lista-alumnos">
           <table class="table">
             <thead class="thead-dark">
               <tr>
                 <th scope="col">Email</th>
                 <th scope="col">Apellido</th>
-                <th scope="col">Nombre</th>
+                <th scope="col">Tipo de documento</th>
+                <th scope="col">Documento</th>
+                <th scope="col">Domicilio</th>
+                <th scope="col">Telefono</th>
+                <th scope="col">Fecha de nacimiento</th>
               </tr>
             </thead>
             <tbody class="filas-alumnos">
-                          {{!-- {%alumnos%} --}}
-
               <!-- <tr>
               <th scope="row">1</th>
               <td>Mark</td>

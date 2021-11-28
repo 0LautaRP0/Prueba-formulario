@@ -10,9 +10,9 @@
         <form class="form-cursos" action="#">
           <p>ID: <span class="lbl-id"></span></p>
           <div class="form-group">
-            <label for="establecimiento">Establecimiento</label>
+            <label for="establecimiento">Establecimiento:</label>
             <input
-              type="text"
+              type="establecimiento"
               id="txt-establecimiento"
               class="form-control"
               placeholder="Ingrese el establecimiento"
@@ -20,14 +20,81 @@
             />
           </div>
           <div class="form-group">
-            <label for="curso">Curso:</label>
+            <label for="nombreDelCurso">Nombre del curso:</label>
             <input
-              type="curso"
-              id="txt-curso"
+              type="text"
+              id="txt-curso-nombre"
               class="form-control"
-              placeholder="Ingrese el curso"
-              name="curso"
+              placeholder="Ingrese el nombre del curso"
+              name="nombre del curso"
             />
+          </div>
+          <div class="form-group">
+            <label for="fechaDesde">Desde:</label>
+            <input
+              type="text"
+              id="txt-fecha-hasta"
+              class="form-control"
+              placeholder="Ingrese la fecha"
+              name="fecha desde"
+            />
+          </div>
+          <div class="form-group">
+            <label for="fechaHasta">Hasta:</label>
+            <input
+              type="text"
+              id="txt-fecha-hasta"
+              class="form-control"
+              placeholder="Ingrese la fecha"
+              name="fecha hasta"
+            />
+          <div class="form-group">
+            <label for="alumnos">Alumnos:</label>
+            <input
+              type="text"
+              id="txt-alumno"
+              class="form-control"
+              placeholder="Ingrese el alumno"
+              name="alumno"
+            />
+          </div>
+          <div class="form-group">
+            <label for="nstructores">Instructores:</label>
+            <input
+              type="text"
+              id="txt-instructor"
+              class="form-control"
+              placeholder="Ingrese el instructor"
+              name="instructor"
+            />
+          </div>
+          <div class="form-group">
+            <label for="fechaHasta">Horarios:</label>
+            <form>
+              <div class="row">
+                <div class="col">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Ingrese el dia"
+                  />
+                </div>
+                <div class="col">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Horario de entrada"
+                  />
+                </div>
+                <div class="col">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Horario de salida"
+                  />
+                </div>
+              </div>
+            </form>
           </div>
           <button type="button" class="btn-guardar-cursos btn btn-primary">
             Guardar
@@ -39,12 +106,17 @@
             Limpiar
           </button>
         </form>
-        <div class="container tabla border my-2 py-2 lista-cursos">
+        <div class="container tabla my-2 py-2 lista-cursos">
           <table class="table">
             <thead class="thead-dark">
               <tr>
                 <th scope="col">Establecimiento</th>
-                <th scope="col">Curso</th>
+                <th scope="col">Nombre del curso</th>
+                <th scope="col">Desde</th>
+                <th scope="col">Hasta</th>
+                <th scope="col">Alumnos</th>
+                <th scope="col">Instructores</th>
+                <th scope="col">Horarios</th>
               </tr>
             </thead>
 

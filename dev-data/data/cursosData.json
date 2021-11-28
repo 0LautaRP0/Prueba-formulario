@@ -1,0 +1,22 @@
+{
+  "cursos": [
+    {
+      "id": 1000,
+      "nombre": "Programador Web",
+      "fechaDesde": "1614567600000",
+      "fechaHasta": "1638241200000",
+      "horarios": [
+        {
+          "dia": "lunes",
+          "desdeHora": "14:30",
+          "hastaHora": "17:30"
+        },
+        {
+          "dia": "miércoles",
+          "desdeHora": "14:30",
+          "hastaHora": "17:30"
+        }
+      ]
+    }
+  ]
+}

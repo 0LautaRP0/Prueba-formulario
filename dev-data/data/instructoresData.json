@@ -1,0 +1,10 @@
+{
+  "instructores": [
+    {
+      "id": 101,
+      "apellido": "Altamiranda",
+      "nombre": "Claudio",
+      "telefono": "2281987654"
+    }
+  ]
+}

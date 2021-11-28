@@ -1,0 +1,84 @@
+{{> head }}
+
+
+
+{{> navbar }}
+
+
+ <div class="container instructores-container border">
+      <div class="container my-3 border form-container-instructores">
+        <h2>Instructores</h2>
+        <form class="form-instructores" action="#">
+          <p>ID: <span class="lbl-id"></span></p>
+          <div class="form-group">
+            <label for="apellidoIns">Apellido:</label>
+            <input
+              type="text"
+              id="txt-apellido-instructor"
+              class="form-control"
+              placeholder="Ingrese el apellido"
+              name="apellido instructor"
+            />
+          </div>
+          <div class="form-group">
+            <label for="nombreIns">Nombre:</label>
+            <input
+              type="text"
+              id="txt-nombre-instructor"
+              class="form-control"
+              placeholder="Ingrese el nombre"
+              name="nombre instructor"
+            />
+          </div>
+          <div class="form-group">
+            <label for="telefonoIns">Telefono:</label>
+            <input
+              type="text"
+              id="txt-telefono-instructor"
+              class="form-control"
+              placeholder="Ingrese el telefono"
+              name="telefono instructor"
+            />
+          </div>
+          <button
+            type="button"
+            class="btn-guardar-instructores btn btn-primary"
+          >
+            Guardar
+          </button>
+          <button
+            type="button"
+            class="btn-actualizar-instructores btn btn-primary"
+          >
+            Actualizar
+          </button>
+          <button
+            type="button"
+            class="btn-limpiar-instructores btn btn-primary"
+          >
+            Limpiar
+          </button>
+        </form>
+        <div class="container tabla my-2 py-2 lista-instructores">
+          <table class="table">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">Apellido</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Telefono</th>
+              </tr>
+            </thead>
+            <tbody class="filas-instructores">
+              <!-- <tr>
+                      <th scope="row">1</th>
+                      <td>Mark</td>
+                      <td>Otto</td>
+                      <td>@mdo</td>
+                  </tr> -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    {{> footer }}
