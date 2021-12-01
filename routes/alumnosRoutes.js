@@ -8,7 +8,7 @@ const routerAlumnos = express.Router();
 //   .get(controller.listadoFiltrado)
 //   .get(controller.mostrarAlumnos);
 routerAlumnos
-  .route('/alumno')
+  .route('/')
   .get(controller.mostrarAlumnos)
   .post(controller.crearAlumno);
 routerAlumnos

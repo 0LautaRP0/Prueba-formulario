@@ -2,10 +2,11 @@ const Alumno = require('../models/alumnosModel');
 const clasesAlumnos = require('./../clases/clasesAlumnos');
 const AppError = require('./../utils/appError');
 const catchAsync = require('./../utils/catchAsync');
+// const fs = require('fs');
 // const { isNumberObject } = require('util/types');
 
 // const alumnos = JSON.parse(
-//   fs.readFileSync('./dev-data/data/alumnos.json', 'utf-8')
+//   fs.readFileSync('./dev-data/data/alumnosData.json', 'utf-8')
 // );
 exports.mostrarAlumnos = catchAsync(async (req, res, next) => {
   let queryObj = { ...req.query };

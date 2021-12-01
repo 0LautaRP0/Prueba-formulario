@@ -1,15 +1,1 @@
-{
-  "alumnos": [
-    {
-      "id": 1,
-      "apellido": "Aravena",
-      "nombre": "Emiliano",
-      "email": "emiliano@example.com",
-      "edad": "20",
-      "documentoTipo": "DNI",
-      "documentoNro": "42456789",
-      "domicilio": "Moreno 1234",
-      "telefono": "2281456789"
-    }
-  ]
-}
+

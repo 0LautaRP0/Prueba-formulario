@@ -36,7 +36,7 @@ const alumnoSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
-    documentoNro: {
+    telefono: {
       type: Number,
       required: true,
     },

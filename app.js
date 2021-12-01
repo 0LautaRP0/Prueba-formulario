@@ -3,19 +3,24 @@ const express = require('express');
 const routerAlumnos = require('./routes/alumnosRoutes');
 const routerCursos = require('./routes/cursosRoutes');
 const routerInstructores = require('./routes/instructoresRoutes');
+const AppError = require('./utils/appError');
 // const routerAuth = require('./rutas/auth');
 const app = express();
+// app.use(morgan('dev'))
 
 app.use(express.json());
-// app.use(morgan('dev'))
 app.use('/api/v1/alumnos', routerAlumnos);
+
+app.use(express.json());
 app.use('/api/v1/cursos', routerCursos);
+
+app.use(express.json());
 app.use('/api/v1/instructores', routerInstructores);
 // app.use('/api/v1/auth', routerAuth);
 
 // manejador de rutasno encontradas
 app.all('*', (req, res, next) => {
-  next(new AppError('xxxxxxxxxxxxx', 404));
+  next(new AppError('No se encontro la ruta', 404));
 });
 
 app.use((error, req, res, next) => {

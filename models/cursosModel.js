@@ -5,7 +5,7 @@ const cursoSchema = new mongoose.Schema(
   {
     nombre: {
       type: String,
-      validate: [validator.isAlpha, 'Error ...'],
+      // validate: [validator.isAlpha, 'Error ...'],
       required: [true, 'El nombre del curso es obligatorio!'],
     },
     fechaDesde: {
@@ -21,7 +21,7 @@ const cursoSchema = new mongoose.Schema(
       required: true,
     },
     horarios: {
-      type: Number,
+      type: String,
       required: true,
     },
   },

@@ -8,7 +8,7 @@ const routerInstructores = express.Router();
 //   .get(controller.listadoFiltrado)
 //   .get(controller.mostrarInstructores);
 routerInstructores
-  .route('/instructor')
+  .route('/')
   .get(controller.mostrarInstructores)
   .post(controller.crearInstructor);
 routerInstructores
